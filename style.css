@@ -711,4 +711,50 @@ body {
     font-size: 1.4rem;
     margin: 0 6px;
   }
+}
+
+/* 우하단 챗봇 플로팅 버튼 */
+.chatbot-float-btn {
+  position: fixed;
+  right: 28px;
+  bottom: 32px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  background: #1976d2;
+  color: #fff;
+  padding: 14px 20px 14px 16px;
+  border-radius: 32px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.chatbot-float-btn:hover {
+  background: #1251a3;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.22);
+}
+.chatbot-float-btn i {
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+.chatbot-float-text {
+  font-size: 1.08em;
+  letter-spacing: 1px;
+}
+@media (max-width: 600px) {
+  .chatbot-float-btn {
+    right: 12px;
+    bottom: 14px;
+    padding: 10px 14px 10px 10px;
+    font-size: 1rem;
+  }
+  .chatbot-float-btn i {
+    font-size: 1.2em;
+    margin-right: 7px;
+  }
+  .chatbot-float-text {
+    font-size: 0.98em;
+  }
 } 
